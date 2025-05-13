@@ -16,4 +16,4 @@
 You can customize the token amount by editing the `tokenAmount` variable in the script:
 
 ```lua
-local tokenAmount = 0.1  -- The amount of tokens to give to the player
+local tokenAmount = 2.5  -- The amount of tokens to give to the player
