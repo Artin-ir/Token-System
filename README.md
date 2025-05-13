@@ -17,3 +17,5 @@ You can customize the token amount by editing the `tokenAmount` variable in the 
 
 ```lua
 local tokenAmount = 2.5  -- The amount of tokens to give to the player
+local waitTime = 30 * 60 * 1000  
+
