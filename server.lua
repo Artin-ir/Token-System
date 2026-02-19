@@ -69,7 +69,7 @@ RegisterCommand("claimtoken", function(source, args)
 
     if not playerReady[identifier] then
         TriggerClientEvent('chat:addMessage', src, {
-            args = {"~r~[SYSTEM]", " You are not eligible to receive a token yet. Please wait."}
+            args = {"~r~[SYSTEM]", " You are not able to receive a token yet. Please wait."}
         })
         return
     end
@@ -112,8 +112,9 @@ end, false)
 
 AddEventHandler('onResourceStart', function(resourceName)
     if GetCurrentResourceName() == resourceName then
-        TriggerClientEvent('chat:addSuggestion', -1, '/claimtoken', 'Claim your token after waiting for a specific time', {
+        TriggerClientEvent('chat:addSuggestion', -1, '/claimtoken', 'Claim your token', {
             { name = 'code', help = 'Enter the 5-digit code to receive your token' }
         })
     end
 end)
+
